@@ -13,9 +13,12 @@
 #include "ext/standard/info.h"
 #include "php_kqueue.h"
 
+/* Inside php-src the header is there whether or not ext/sockets is built; HAVE_SOCKETS says it is. */
 #if __has_include("ext/sockets/php_sockets.h")
 # include "ext/sockets/php_sockets.h"
-# define KQ_HAVE_SOCKETS 1
+# ifdef HAVE_SOCKETS
+#  define KQ_HAVE_SOCKETS 1
+# endif
 #endif
 
 #include <sys/types.h>
