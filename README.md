@@ -1,5 +1,7 @@
 # php-io-extensions/kqueue
 
+[![CI](https://img.shields.io/github/actions/workflow/status/php-io-extensions/kqueue/ci.yml?style=flat-square&label=CI)](https://github.com/php-io-extensions/kqueue/actions/workflows/ci.yml)
+
 1:1 PHP bindings of macOS `<sys/event.h>`, in plain C. Global functions, same names, same argument order as C. No wrapper package, no policy.
 
 Platform: macOS (Darwin). Binds `kevent64()`, which only macOS has. PHP ≥ 8.4, 64-bit, NTS + ZTS.
