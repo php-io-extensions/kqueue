@@ -4,7 +4,7 @@
 extern zend_module_entry kqueue_module_entry;
 #define phpext_kqueue_ptr &kqueue_module_entry
 
-#define PHP_KQUEUE_VERSION "0.10.5"
+#define PHP_KQUEUE_VERSION "0.11.0"
 
 ZEND_BEGIN_MODULE_GLOBALS(kqueue)
 	int last_errno;
